@@ -1,0 +1,97 @@
+*::before,
+after {
+  box-sizing: border-box;
+}
+html {
+  background: #f7f7f5;
+  color: #1e1f1f;
+  font-size: 16px;
+  hyphens: auto;
+  scroll-behavior: smooth;
+}
+body {
+  width: 87vw;
+  margin: 10vh auto;
+}
+.gal {
+  display: flex;
+}
+.gal-column {
+  display: flex;
+  flex-direction: column;
+  max-width: 25%;
+  align-items: center;
+}
+.gal-thumb {
+  position: relative;
+}
+.gal-image {
+  display: flex;
+  margin: 0 auto;
+  max-width: 20vw;
+}
+p {
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: "Aeonik", sans-serif;
+  line-height: 1.6;
+}
+h1 {
+  max-width: 600px;
+  margin: 20px auto;
+  font-family: "Alegreya", serif;
+}
+hr {
+  border: 0;
+  border-bottom: 1px solid #ededed;
+  content: "";
+  margin: 50px auto;
+  width: 600px;
+}
+.backtohome {
+  background: #f4f4f4;
+  border: 1px solid #ededed;
+  border-bottom: 0;
+  top: 30px;
+  font-family: "Sudo", "SF Mono", "Inconsolata", monospace;
+  font-size: 50px;
+  padding: 0 20 12 20;
+  position: absolute;
+  left: 30px;
+  text-decoration: none;
+  z-index: 1;
+}
+.backtotop:hover {
+  text-decoration: none;
+}
+.backtotop::after {
+  display: none;
+}
+.backtotop {
+  background: #f4f4f4;
+  border: 1px solid #ededed;
+  border-bottom: 0;
+  bottom: 30px;
+  font-family: "Sudo", "SF Mono", "Inconsolata", monospace;
+  font-size: 50px;
+  padding: 10px;
+  position: fixed;
+  right: 30px;
+  text-decoration: none;
+  z-index: 1;
+}
+.backtotop:hover {
+  padding: 10px;
+  text-decoration: none;
+}
+.backtotop::after {
+  display: none;
+}
+a {
+  color: #636363;
+  text-decoration: underline;
+}
+a:hover {
+  background: #f4f4f4;
+  color: #a33;
+}
