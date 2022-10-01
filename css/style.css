@@ -21,9 +21,24 @@
 html {
   overflow-y: scroll;
   -webkit-font-smoothing: antialiased;
-  background-color: var(--bg0);
+  /* background-color: var(--bg0); */
   font-size: 16px;
   scroll-behavior: smooth;
+  background: linear-gradient(-45deg, #d4d1d1, #c7d3de, #dec7c7, #c7ded3);
+  background-size: 400% 400%;
+  animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 body {
@@ -38,8 +53,9 @@ body {
   font-family: "Crimson Pro", serif;
   font-size: 1em;
   line-height: 1.8em;
-  background-color: var(--bg0);
-  color: var(--fg1);
+  /* background-color: var(--bg0); */
+  /* color: var(--fg1); */
+  background: transparent;
 }
 
 @media only screen and (max-device-width: 480px) {
@@ -156,6 +172,7 @@ h1:hover:before {
 
 /* Nav bar */
 nav {
+  color: var(--fg1);
   display: block;
   text-align: left;
   padding-top: 20px;
