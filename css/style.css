@@ -299,3 +299,9 @@ hr {
     border: 1px solid var(--title2);
 }
 
+/* profile image */
+.profile {
+    width: 200px;
+    border-radius: 50%;
+}
+
