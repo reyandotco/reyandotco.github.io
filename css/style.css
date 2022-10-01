@@ -323,3 +323,10 @@ hr {
   width: 200px;
   border-radius: 50%;
 }
+
+.profile::after {
+  content: " - Remember this";
+  background-color: yellow;
+  color: red;
+  font-weight: bold;
+}
